@@ -1,20 +1,103 @@
 body {
-    font-family: Arial, sans-serif;
     color: white;
-    background-color: black;
+    background: linear-gradient(to right bottom, #000000, #4a4a4a);
     margin: 0;
     padding: 0;
+    height: 200vh;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: scroll;
 }
 
 header {
+    font-family: Arial, sans-serif;
     background-color: #444;
     padding: 20px;
-    text-align: center;
+    text-align: right;
     border-bottom: 3px solid #ffcc00;
-    color: #ffcc00;
+    color: #ffffff;
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
+}
+
+#button {
+    text-decoration: none;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#button:hover {
+    background-color: #af8c00;
+    transform: scale(1.05);
+}
+
+footer {
+    
+}
+
+#footerButton {
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    text-decoration: none;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#footerButton:hover {
+    background-color: #af8c00;
+    transform: scale(1.05);
+}
+
+#info  {
+    margin: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
+    border: 1px solid #ffcc00;
+    color: #ffffff;
+    max-width: 100%;
+}
+
+#info1 {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-size: 35px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    text-decoration-color: #ffcc00;
+    top: 0px;
+    left: 0px;
+    margin: 20px;
+    padding: 0px;
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+#info2 {
+    color: #ffffff;
+    font-size: 20px;
+    top: 0px;
+    left: 0px;
+    margin: 20px;
+    padding: 0px;
+    margin-bottom: 10px;
+    max-width: 100%;
 }
