@@ -1,12 +1,10 @@
 body {
+    font-family: 'Courier New', Courier, monospace;
     color: white;
     background: linear-gradient(to right bottom, #000000, #4a4a4a);
     margin: 0;
     padding: 0;
-    height: 200vh;
-    max-width: 100%;
-    max-height: 100%;
-    overflow: scroll;
+    text-decoration: none;
 }
 
 header {
@@ -31,7 +29,6 @@ header {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -40,64 +37,54 @@ header {
     transform: scale(1.05);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+}
+
+div {
+    padding: 20px;
+}
+
+#box1 {
+    background-color: #ffcc00;
+    color: black;
+    font-size: 16px;
+}
+
+#box2 {
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+}
+
+#box3 {
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 16px;
+}
+
 footer {
-    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #444;
+    color: #ffffff;
+    padding: 20px;
+    text-align: right;
+    border-top: 3px solid #ffcc00;
 }
 
 #footerButton {
-    bottom: 20px;
-    right: 20px;
-    position: fixed;
     text-decoration: none;
     background-color: #ffcc00;
     color: black;
-    border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-#footerButton:hover {
-    background-color: #af8c00;
-    transform: scale(1.05);
-}
-
-#info  {
-    margin: 20px;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
-    border: 1px solid #ffcc00;
-    color: #ffffff;
-    max-width: 100%;
-}
-
-#info1 {
-    font-family: Arial, sans-serif;
-    color: #ffffff;
-    font-size: 35px;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 5px;
-    text-decoration-color: #ffcc00;
-    top: 0px;
-    left: 0px;
-    margin: 20px;
-    padding: 0px;
-    margin-bottom: 10px;
-    max-width: 100%;
-}
-
-#info2 {
-    color: #ffffff;
-    font-size: 20px;
-    top: 0px;
-    left: 0px;
-    margin: 20px;
-    padding: 0px;
-    margin-bottom: 10px;
-    max-width: 100%;
 }
