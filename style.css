@@ -22,6 +22,7 @@ header {
 }
 
 #button {
+    font-family: Arial, sans-serif;
     text-decoration: none;
     background-color: #ffcc00;
     color: black;
@@ -53,18 +54,31 @@ div {
     background-color: #ffcc00;
     color: black;
     font-size: 16px;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 700px;
+    height: fit-content;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 #box2 {
     background-color: #444;
     color: white;
     font-size: 16px;
+    margin: 0 auto;
+    width: 700px;
+    height: fit-content;
 }
 
 #box3 {
     background-color: #1a1a1a;
     color: white;
     font-size: 16px;
+    margin: 0 auto;
+    width: 700px;
+    height: fit-content;
 }
 
 footer {
@@ -79,12 +93,14 @@ footer {
     border-top: 3px solid #ffcc00;
 }
 
-#footerButton {
+#copy {
     text-decoration: none;
-    background-color: #ffcc00;
-    color: black;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    position: fixed;
+    bottom: 10px;
 }
+
+/* pedir medias querys de estos estilos, pero primero debes quitar los estilos del html*/
