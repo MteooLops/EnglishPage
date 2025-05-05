@@ -1,3 +1,7 @@
+/**
+I USE TAILWIND BTW
+*/
+
 body {
     font-family: 'Courier New', Courier, monospace;
     color: white;
@@ -11,7 +15,8 @@ header {
     font-family: Arial, sans-serif;
     background-color: #444;
     padding: 20px;
-    text-align: right;
+    text-align: center;
+    /* Centrar contenido */
     border-bottom: 3px solid #ffcc00;
     color: #ffffff;
     font-size: 24px;
@@ -19,6 +24,41 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    /* Colocar elementos en columna */
+    align-items: center;
+    /* Centrar elementos horizontalmente */
+    gap: 10px;
+    /* Espaciado entre el título y los botones */
+}
+
+.header-title {
+    font-size: 40px;
+    /* Tamaño del título */
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    margin-bottom: 10px;
+    /* Espaciado inferior */
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header ul {
+    display: flex;
+    gap: 10px;
+    /* Espaciado entre botones */
+    flex-wrap: wrap;
+    /* Permitir que los botones se ajusten si es necesario */
+    justify-content: center;
+    /* Centrar los botones */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* Eliminar viñetas */
 }
 
 #button {
@@ -88,19 +128,70 @@ footer {
     right: 0;
     background-color: #444;
     color: #ffffff;
-    padding: 20px;
+    padding: 5px;
     text-align: right;
     border-top: 3px solid #ffcc00;
+    display: flex;
+    /* Usar flexbox para organizar los elementos */
+    justify-content: space-between;
+    /* Separar los elementos */
+    align-items: center;
+    /* Alinear verticalmente */
 }
 
-#copy {
-    text-decoration: none;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    position: fixed;
-    bottom: 10px;
+.boxStore {
+    width: 580px;
+    height: 520px !important;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header-title {
+        margin-bottom: 20px;
+        /* Más espacio debajo del título */
+        text-underline-position: under;
+        text-decoration: underline;
+        text-underline-offset: 0px;
+        font-size: 20px;
+        /* Tamaño del título */
+    }
+
+    #box1,
+    #box2,
+    #box3 {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #button {
+        padding: 10px 24px;
+        /* Botones más anchos */
+        font-size: 14px;
+    }
+}
+
+/* Media query para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 15px;
+    }
+
+    #button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
 }
 
 /* pedir medias querys de estos estilos, pero primero debes quitar los estilos del html*/
